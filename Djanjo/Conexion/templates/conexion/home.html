@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f27b0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #d72525;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(181, 237, 27, 0.1);
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #c3ed2a;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            margin: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #fff;
+            color: #0f27b0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <p>¡Consulta las estadísticas y más!</p>
+        <ul>
+            <li><a href="{% url 'jugadores' %}">Ver Jugadores</a></li>
+            <li><a href="{% url 'estadios' %}">Ver Estadios</a></li>
+            <li><a href="{% url 'estadisticas' %}">Ver Estadísticas</a></li>
+        </ul>
+        <img src="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" alt="Fútbol">
+    </div>
+</body>
+</html>
+
