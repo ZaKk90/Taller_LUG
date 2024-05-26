@@ -1,0 +1,2 @@
+echo "# Taller_LUG" >> README.md
+git init
